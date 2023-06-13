@@ -53,6 +53,11 @@ img {
   max-width: 100%;
 }
 
+/*dark mode*/
+
+.dark-mode h1 {
+  color: red;
+}
 /* custom classes*/
 
 /* distinct styles*/
