@@ -1,0 +1,124 @@
+:root {
+  --clr-primary-light: ;
+  --clr-primary-dark: ;
+
+  --clr-secondary-light: ;
+  --clr-secondary-dark: ;
+
+  --clr-ntrl-light: hsl(218, 100%, 96%);
+  --clr-ntrl-dark: hsl(244, 37%, 8%);
+
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Space Mono", monospace;
+
+  --ff-heading: var(--ff-primary);
+  --ff-body: var(--ff-primary);
+  --ff-code: var(--ff-secondary);
+
+  --fs-h1: 2rem;
+  --fs-h2: 1.5rem;
+  --fs-h3: 1.2rem;
+
+  --fs-p1: 1rem;
+  --fs-p2: 0.9rem;
+  --fs-p3: 0.8rem;
+
+  --fw-100: 100;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+  --fw-900: 900;
+}
+
+/* general styles*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* loader */
+
+.loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-ntrl-dark);
+  font-family: var(--ff-code);
+}
+
+.loader div {
+  overflow: hidden;
+  color: white;
+  border-right: 0.15em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  max-width: fit-content;
+  animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+}
+
+/* .loader div:after {
+  content: "done!";
+  display: block;
+  animation-delay: 2s;
+  animation: next-text 1s linear infinite alternate both;
+} */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
+}
+
+/* @keyframes nex-text {
+  from {
+    width: 0;
+  } 
+  to {
+    width: fit-content;
+  }
+} */
+
+/*dark mode*/
+
+.dark-mode h1 {
+  color: red;
+}
+/* custom classes*/
+
+/* distinct styles*/
